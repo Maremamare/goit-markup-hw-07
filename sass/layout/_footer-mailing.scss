@@ -27,11 +27,10 @@
 	border-radius: 4px;
 
 	&::placeholder {
-		font-size: 16px;
-		line-height: 1.25;
 		display: flex;
 		align-items: center;
-		letter-spacing: 0.03em;
+
+		@include font(null, 16px, 1.25, null, 0.03em);
 
 		color: rgba(255, 255, 255, 0.6);
 	}

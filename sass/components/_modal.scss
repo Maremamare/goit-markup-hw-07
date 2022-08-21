@@ -59,11 +59,7 @@
 .modal-title {
 	margin-bottom: 12px;
 
-	font-weight: 700;
-	font-size: 20px;
-	line-height: 1.15;
-	text-align: center;
-	letter-spacing: 0.03em;
+	@include font(700, 20px, 1.15, center, 0.03em);
 
 	color: var(--first-title-color);
 }
@@ -73,9 +69,7 @@
 }
 
 .modal-form__label {
-	font-size: 12px;
-	line-height: 1.16;
-	letter-spacing: 0.01em;
+	@include font(null, 12px, 1.16, null, 0.01em);
 
 	color: var(--text-color);
 }
@@ -160,9 +154,7 @@
 	display: flex;
 	align-items: center;
 
-	font-size: 14px;
-	line-height: 1.7;
-	letter-spacing: 0.03em;
+	@include font(null, 14px, 1.7, null, 0.03em);
 
 	color: var(--text-color);
 
@@ -203,9 +195,8 @@
 }
 
 .modal-form__contract {
-	font-size: 14px;
-	line-height: 1.7;
-	letter-spacing: 0.03em;
+	@include font(null, 14px, 1.7, null, 0.03em);
+
 	color: var(--accent-color);
 }
 

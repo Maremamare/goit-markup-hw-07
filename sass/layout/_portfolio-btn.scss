@@ -16,11 +16,8 @@
 	border-radius: 4px;
 
 	font-family: inherit;
-	font-weight: 500;
-	font-size: 16px;
-	line-height: 1.6;
-	text-align: center;
-	letter-spacing: 0.03em;
+	@include font(500, 16px, 1.6, center, 0.03em);
+
 	background-color: #f5f4fa;
 
 	transition: color var(--duration-ms) var(--timing-function),
