@@ -1,0 +1,43 @@
+.socials {
+	margin-left: 70px;
+}
+
+.heading {
+	font-family: "Roboto";
+	font-style: normal;
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 1.14;
+	letter-spacing: 0.03em;
+	text-transform: uppercase;
+	color: var(--second-title-color);
+}
+
+.socials__heading {
+	margin-bottom: 20px;
+}
+
+.soc {
+	display: flex;
+	justify-content: center;
+	gap: 10px;
+}
+
+.soc__link {
+	width: 44px;
+	height: 44px;
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	fill: #ffffff;
+	background-color: rgba(255, 255, 255, 0.1);
+
+	transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.soc__link:hover,
+.soc__link:focus {
+	background-color: var(--accent-color);
+}
