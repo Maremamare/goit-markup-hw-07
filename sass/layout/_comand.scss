@@ -26,7 +26,6 @@
 	line-height: 1.18;
 	text-align: center;
 	letter-spacing: 0.03em;
-	color: var(--first-title-color);
 }
 
 .comand-list__text {
@@ -55,13 +54,14 @@
 	justify-content: center;
 	color: #afb1b8;
 
-	transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
+	transition: background-color var(--duration-ms) var(--timing-function),
+		color var(--duration-ms) var(--timing-function);
 
-.comand-soc__link:hover,
-.comand-soc__link:focus {
-	background-color: var(--accent-color);
-	color: #ffffff;
+	&:hover,
+	&:focus {
+		background-color: var(--accent-color);
+		color: #ffffff;
+	}
 }
 
 .comand-soc__icon {
